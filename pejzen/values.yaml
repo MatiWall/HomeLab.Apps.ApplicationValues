@@ -16,5 +16,5 @@ deployment:
   ingress:
     enabled: true
     pathType: ImplementationSpecific
+    host: pejzen.mw.local
     path: /
-    url: pejzen.mw.local
