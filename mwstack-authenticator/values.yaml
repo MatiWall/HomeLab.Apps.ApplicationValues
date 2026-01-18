@@ -1,0 +1,20 @@
+# my-react-app/values.yaml
+
+
+deployment:
+  replicaCount: 1
+  image:
+    repository: docker-registry.mw.local/mwstack-authenticator
+    tag: 0.1.0
+    pullPolicy: IfNotPresent
+
+  service:
+    name: mwstack-authenticator-frontend
+    type: ClusterIP
+    port: 80
+
+  ingress:
+    enabled: true
+    pathType: ImplementationSpecific
+    host: authenticator.mw.local
+    path: /
