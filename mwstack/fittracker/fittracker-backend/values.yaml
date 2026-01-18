@@ -18,3 +18,8 @@ deployment:
     pathType: ImplementationSpecific
     host: fittracker.mw.local
     path: /api
+  values:
+    db_host: postgres.mw.local
+    db_name: FitTracker
+    enable_otel: true
+    host: 0.0.0.0
