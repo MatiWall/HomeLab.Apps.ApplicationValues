@@ -19,7 +19,7 @@ deployment:
     host: fittracker.mw.local
     path: /api
   appconfig:
-    db_host: postgres.mw.local
+    db_host: postgres-service.postgres.svc.cluster.local
     db_name: FitTracker
     enable_otel: true
     host: 0.0.0.0
