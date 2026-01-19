@@ -1,6 +1,9 @@
 # my-react-app/values.yaml
 
-
+global:
+  system: mwstack
+  application: fittracker
+  deployableUnit: backend
 deployment:
   replicaCount: 1
   image:
@@ -17,7 +20,7 @@ deployment:
     enabled: true
     pathType: ImplementationSpecific
     host: fittracker.mw.local
-    path: /api
+    path: /
   appconfig:
     db_host: postgres-service.postgres.svc.cluster.local
     db_name: FitTracker
