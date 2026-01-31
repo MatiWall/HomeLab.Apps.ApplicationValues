@@ -1,9 +1,7 @@
 # my-react-app/values.yaml
 
 global:
-  system: mwstack
-  application: webhook
-  deployableUnit: forwarder
+  name: mwstack-webhookforwarder
 deployment:
   replicaCount: 1
   image:
@@ -21,3 +19,5 @@ deployment:
     pathType: ImplementationSpecific
     host: mwstack-webhookforwarder.mw.local
     path: /
+    tls:
+      enable: true
