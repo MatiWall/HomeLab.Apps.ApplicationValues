@@ -21,6 +21,7 @@ deployment:
     pathType: ImplementationSpecific
     host: fittracker.mw.local
     path: /
+    
   appconfig:
     db_host: postgres-service.postgres.svc.cluster.local
     db_name: FitTracker
