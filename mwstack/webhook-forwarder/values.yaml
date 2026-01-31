@@ -1,6 +1,9 @@
 # my-react-app/values.yaml
 
-
+global:
+  system: mwstack
+  application: webhook
+  deployableUnit: forwarder
 deployment:
   replicaCount: 1
   image:
