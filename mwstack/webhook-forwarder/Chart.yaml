@@ -8,5 +8,5 @@ type: application
 dependencies:
   - name: deployment-template
     version: 0.1.0
-    repository: https://matiwall.github.io/homelab.helm-charts/
+    repository: https://matiwall.github.io/HomeLab.ClusterTools.HelmCharts/
     alias: deployment
