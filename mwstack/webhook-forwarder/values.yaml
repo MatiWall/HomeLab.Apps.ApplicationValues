@@ -3,7 +3,7 @@
 global:
   name: mwstack-webhookforwarder
 deployment:
-  replicaCount: 2
+  replicaCount: 1
   secrets:
     enable: true
   image:
