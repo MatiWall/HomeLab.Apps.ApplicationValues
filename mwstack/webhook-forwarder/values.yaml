@@ -4,6 +4,8 @@ global:
   name: mwstack-webhookforwarder
 deployment:
   replicaCount: 1
+  secrets:
+    enable: true
   image:
     repository: docker-registry.mw.local/mwstack-webhookforwarder
     tag: 20260204-171012-5e4cf58
