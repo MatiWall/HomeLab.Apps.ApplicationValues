@@ -8,7 +8,7 @@ deployment:
     enable: true
   image:
     repository: docker-registry.mw.local/mwstack-webhookforwarder
-    tag: 20260204-171012-5e4cf58
+    tag: 20260206-194015-593b903
     pullPolicy: IfNotPresent
 
   service:
