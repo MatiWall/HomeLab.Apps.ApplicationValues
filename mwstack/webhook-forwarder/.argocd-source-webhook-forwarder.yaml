@@ -1,0 +1,8 @@
+helm:
+  parameters:
+  - name: image.name
+    value: docker-registry.mw.local/mwstack-webhookforwarder
+    forcestring: true
+  - name: image.tag
+    value: 20260215-192042-22c9230
+    forcestring: true
