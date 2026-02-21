@@ -1,5 +1,3 @@
-
-
 global:
   name: mwstack-webhookforwarder
 deployment:
@@ -8,15 +6,13 @@ deployment:
     enable: true
   image:
     repository: docker-registry.mw.local/mwstack-webhookforwarder
-    tag: 20260206-203311-9274825
+    tag: 20260215-192042-22c9230
     pullPolicy: IfNotPresent
-
   service:
     name: mwstack-webhookforwarder
     type: ClusterIP
     port: 80
     targetPort: 8080
-
   ingress:
     enable: true
     pathType: ImplementationSpecific
@@ -24,19 +20,17 @@ deployment:
     path: /
     tls:
       enable: true
-  
   extraManifests:
-    - apiVersion: bitnami.com/v1alpha1
-      kind: SealedSecret
-      metadata:
-        name: mwstack-webhookforwarder-secrets
-        namespace: mwstack
-      spec:
-        encryptedData:
-          secrets: AgAXm74OKc038WyJSsWrPA+urhJRbi37tjYVD1HF5n1LdBzhB8A3Fk+pYxR/7wMIS895Jgfp/ziVG21b97IHw5Rgon+5+xlKbqeHoZ+jXkqEEcw59NIaao+xtgG1rcxQe3FLxLkd2QWERtIOQZBqQFVTdr1JvdiiofZxRZmVb99xS28F+t0E2ebWrxnGPQxRN8C9ft+dfOKdn0PvZazJW2MbfQXHHNfm5QgQuZLiWkO3JTk0tyYbC9DbF1N9L2FpAG+vD0fs67mugT0/tMJF+CUBFNymE90BRKNdOpLbELHApYwZ9pun+mq+0VECS7UiTqSqEN1VAUx5MxPkg8E095GwRjEkSLJzgxheA7PdPoSZCHA6eAWWAlPHysrdbk0bh9KhiYLxUGgqY6vvB+gu+vrRUxSUnaYkXn+ndnXLSWKT0Hxrg8hn08lYFViVWi8uw7xjQg+ulNwrLU5QP7OsejPX/H9oZ8+bDSFFZRR+4VyGDotg/JHQNyl7dH98pt2Y2ANhcpPqspV7Q/wMpXuuUg8c1Ir1DIWkFyDwZlZd+iUSOlJnU0BWmAiCRAnkQK1hgZFN6Ofq18MaPP6JD4nvTvOSHhnCir+SwNUo/SN8CMMmZTi1ORVYCvRrojm36l7AxiF4oRywxT1qjeBQQoTfivD/vhWnkSW5s60z3/k5ftDD6DqcjHdgYE6sdqI3gjDW0ZmV8Z377OVEKiKup2+2k5gNF4aa/69vvnlcMLLd7cJ+fya8T2JENvii1446di4Nbi+QZz3Cpli0j2ww5X5Ztwkih4CKkpkLjBHD/Gnn5jQEHb4tvphHOzYXN0Lr1Qw6+hN7hKdcKbV7JUjvZoewnpW1OF0jXa/N+8Xi+VQDGXtadKmEFUZ0eqTm
-        template:
-          metadata:
-            name: mwstack-webhookforwarder-secrets
-            namespace: mwstack
-          type: Opaque
-
+  - apiVersion: bitnami.com/v1alpha1
+    kind: SealedSecret
+    metadata:
+      name: mwstack-webhookforwarder-secrets
+      namespace: mwstack
+    spec:
+      encryptedData:
+        secrets: AgAXm74OKc038WyJSsWrPA+urhJRbi37tjYVD1HF5n1LdBzhB8A3Fk+pYxR/7wMIS895Jgfp/ziVG21b97IHw5Rgon+5+xlKbqeHoZ+jXkqEEcw59NIaao+xtgG1rcxQe3FLxLkd2QWERtIOQZBqQFVTdr1JvdiiofZxRZmVb99xS28F+t0E2ebWrxnGPQxRN8C9ft+dfOKdn0PvZazJW2MbfQXHHNfm5QgQuZLiWkO3JTk0tyYbC9DbF1N9L2FpAG+vD0fs67mugT0/tMJF+CUBFNymE90BRKNdOpLbELHApYwZ9pun+mq+0VECS7UiTqSqEN1VAUx5MxPkg8E095GwRjEkSLJzgxheA7PdPoSZCHA6eAWWAlPHysrdbk0bh9KhiYLxUGgqY6vvB+gu+vrRUxSUnaYkXn+ndnXLSWKT0Hxrg8hn08lYFViVWi8uw7xjQg+ulNwrLU5QP7OsejPX/H9oZ8+bDSFFZRR+4VyGDotg/JHQNyl7dH98pt2Y2ANhcpPqspV7Q/wMpXuuUg8c1Ir1DIWkFyDwZlZd+iUSOlJnU0BWmAiCRAnkQK1hgZFN6Ofq18MaPP6JD4nvTvOSHhnCir+SwNUo/SN8CMMmZTi1ORVYCvRrojm36l7AxiF4oRywxT1qjeBQQoTfivD/vhWnkSW5s60z3/k5ftDD6DqcjHdgYE6sdqI3gjDW0ZmV8Z377OVEKiKup2+2k5gNF4aa/69vvnlcMLLd7cJ+fya8T2JENvii1446di4Nbi+QZz3Cpli0j2ww5X5Ztwkih4CKkpkLjBHD/Gnn5jQEHb4tvphHOzYXN0Lr1Qw6+hN7hKdcKbV7JUjvZoewnpW1OF0jXa/N+8Xi+VQDGXtadKmEFUZ0eqTm
+      template:
+        metadata:
+          name: mwstack-webhookforwarder-secrets
+          namespace: mwstack
+        type: Opaque
