@@ -3,3 +3,7 @@
 image:
   tag: 20260215-192042-22c9230
   repository: docker-registry.mw.local/mwstack-webhookforwarder
+deployment:
+  image:
+    tag: 20260215-192042-22c9230
+    repository: docker-registry.mw.local/mwstack-webhookforwarder
