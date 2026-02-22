@@ -8,6 +8,8 @@ deployment:
     repository: docker-registry.mw.local/mwstack-webhookforwarder
     tag: 20260215-192042-22c9230
     pullPolicy: IfNotPresent
+  appconfig:
+    endpoint: "http://build-pipeline-webhook-eventsource-svc.argo.svc.cluster.local:12000/build"
   service:
     name: mwstack-webhookforwarder
     type: ClusterIP
