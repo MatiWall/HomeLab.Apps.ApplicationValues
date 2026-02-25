@@ -8,20 +8,17 @@ deployment:
   replicaCount: 1
   image:
     repository: docker-registry.mw.local/fittracker-backend
-    tag: 0.1.2
+    tag: 20260225-183644-4575769
     pullPolicy: IfNotPresent
-
   service:
     name: fittracker-backend
     type: ClusterIP
     port: 80
-
   ingress:
     enabled: true
     pathType: ImplementationSpecific
     host: fittracker.mw.local
     path: /
-    
   appconfig:
     db_host: postgres-service.postgres.svc.cluster.local
     db_name: FitTracker
