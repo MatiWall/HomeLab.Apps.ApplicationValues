@@ -15,3 +15,14 @@ deployment:
     pathType: ImplementationSpecific
     host: authenticator.mw.local
     path: /
+
+  appconfig:
+    host: 0.0.0.0
+    port: 8000
+
+    db_host: 192.168.0.11 #localhost
+    db_port: 5432
+    db_name: MWStackUsers
+    db_user: postgres
+
+    enable_otel: false
