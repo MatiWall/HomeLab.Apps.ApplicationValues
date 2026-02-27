@@ -4,7 +4,7 @@ deployment:
   replicaCount: 1
   image:
     repository: docker-registry.mw.local/mwstack-authenticator
-    tag: 20260225-191141-c875eae
+    tag: 20260227-210725-7d3da78
     pullPolicy: IfNotPresent
   service:
     name: mwstack-authenticator-frontend
