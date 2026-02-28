@@ -4,7 +4,7 @@ deployment:
   replicaCount: 1
   image:
     repository: docker-registry.mw.local/mwstack-authenticator
-    tag: 20260228-095811-de414e6
+    tag: 20260228-101236-90675a0
     pullPolicy: IfNotPresent
   service:
     name: mwstack-authenticator-frontend
@@ -23,5 +23,4 @@ deployment:
     db_name: MWStackUsers
     db_user: postgres
     db_password: postgres
-
     enable_otel: false
