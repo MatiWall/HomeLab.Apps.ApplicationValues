@@ -4,7 +4,7 @@ deployment:
   replicaCount: 1
   image:
     repository: docker-registry.mw.local/mwstack-authenticator
-    tag: 20260227-213154-5629544
+    tag: 20260228-095811-de414e6
     pullPolicy: IfNotPresent
   service:
     name: mwstack-authenticator-frontend
@@ -15,11 +15,9 @@ deployment:
     pathType: ImplementationSpecific
     host: authenticator.mw.local
     path: /
-
   appconfig:
     host: 0.0.0.0
     port: 8000
-
     db_host: 192.168.0.11 #localhost
     db_port: 5432
     db_name: MWStackUsers
