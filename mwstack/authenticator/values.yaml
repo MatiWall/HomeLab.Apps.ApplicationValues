@@ -11,11 +11,9 @@ deployment:
     pullPolicy: IfNotPresent
   service:
     name: mwstack-authenticator-frontend
-    type: ClusterIP
-    port: 8000
+    targetPort: 8000
   ingress:
     enable: true
-    pathType: ImplementationSpecific
     host: authenticator.mw.local
     path: /
     tls:
