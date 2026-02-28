@@ -6,7 +6,7 @@ deployment:
   replicaCount: 1
   image:
     repository: docker-registry.mw.local/fittracker-backend
-    tag: 20260228-113416-3f1b74d
+    tag: 20260228-114101-872cb85
   service:
     name: fittracker-backend
     type: ClusterIP
