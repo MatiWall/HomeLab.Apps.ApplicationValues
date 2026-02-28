@@ -24,5 +24,6 @@ deployment:
     db_port: 5432
     db_name: MWStackUsers
     db_user: postgres
+    db_password: postgres
 
     enable_otel: false
