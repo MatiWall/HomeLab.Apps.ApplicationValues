@@ -11,7 +11,7 @@ deployment:
     type: ClusterIP
     port: 80
   ingress:
-    enabled: true
+    enable: true
     pathType: ImplementationSpecific
     host: authenticator.mw.local
     path: /
@@ -24,4 +24,4 @@ deployment:
     db_user: postgres
     db_password: postgres
 
-    enable_otel: false
+    enable_otel: true
