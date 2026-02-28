@@ -1,5 +1,8 @@
 # my-react-app/values.yaml
 
+global:
+  name: mwstack-authenticator
+
 deployment:
   replicaCount: 1
   image:
