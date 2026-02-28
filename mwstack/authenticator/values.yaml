@@ -12,7 +12,7 @@ deployment:
   service:
     name: mwstack-authenticator-frontend
     type: ClusterIP
-    port: 80
+    port: 8000
   ingress:
     enable: true
     pathType: ImplementationSpecific
