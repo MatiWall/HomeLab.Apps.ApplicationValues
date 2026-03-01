@@ -1,7 +1,7 @@
 # my-react-app/values.yaml
 
 global:
-  system: mwstack-fittracker-frontend
+  name: mwstack-fittracker-frontend
 deployment:
   replicaCount: 1
   image:
