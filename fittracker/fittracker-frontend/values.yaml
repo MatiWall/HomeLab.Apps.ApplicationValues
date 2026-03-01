@@ -15,3 +15,5 @@ deployment:
     enabled: true
     host: fittracker.mw.local
     path: /
+    tls:
+      enable: true
