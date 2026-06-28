@@ -6,7 +6,7 @@ deployment:
   replicaCount: 1
   image:
     repository: docker-registry.mw.local/fittracker-frontend
-    tag: 20260628-095539-f14e199
+    tag: 20260628-115527-35245e0
   service:
     name: fittracker-frontend
     targetPort: 8000
